@@ -1,0 +1,166 @@
+/* _______________________________________________________________ BASIC */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, address, code, del, dfn, em, img, q, 
+dl, dt, dd, ol, ul, li, 
+table, caption, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;border:0;vertical-align:baseline;}
+body {line-height:19px;word-spacing:.8px;font-size:12px;color:#444;font-family:"Lucida Grande","Lucida Sans",arial,sans-serif;}
+hr,p,ul,ol,dl,pre,address,table,form{margin:7px 0px;}
+a:link,#site_name a{color:#333;text-decoration:none;}
+a:visited{color:#444;text-decoration:none;}
+a:hover,a:active,a:focus{color:#666;text-decoration:none;outline:none;-moz-outline-style:none;}
+
+/* ______________________________________________________________ TABLES */
+table {border-collapse:collapse;border-spacing:0;}
+caption, th, td {text-align:left;}
+table, td, th {vertical-align:middle;}
+th,td,textarea{border:1px solid #ddd;padding:5px;}
+td,textarea{background-color:#F9F9F9;}
+tr.alt td,th{background-color:#f1f1f1;}
+
+/* ______________________________________________________________ HEADERS */
+.page_title, #site_name, h1, h2, h3, h4, h5, h6 {word-spacing:.8px;font-family:times,serif;font-weight:normal;font-style:italic;}	
+h1 {font-size:28px;}
+h2 {font-size:22px;}
+h3 {font-size:20px;}
+h4 {font-size:18px;}
+h5 {font-size:16px;}
+h6 {font-size:14px;}
+
+/* ______________________________________________________________ TYPOGRAPHY */
+strong,th,thead td,dt,dfn,b,label,caption,legend{font-weight:bold;}
+cite,em,dfn,i{font-style:italic;}
+hr{display:none;background-color:transparent !important;width:100%;height:1px;line-height:0px;border:0px solid transparent !important;}
+ul{list-style:square outside;}
+ol{list-style:decimal outside;}
+ul,ol,dd{margin-left:24px;}
+ul ul,ol ul,ul ol,ol ol{margin-bottom:0;}
+pre{font-family:mono-space,monospace;white-space:pre;overflow:auto;width:95%;padding:8px;}
+blockquote {margin:20px; padding:10px 40px;background: url('images/quote_dark.png') no-repeat 4px 4px;border:1px solid #ddd;background-color:#f9f9f9;}
+fieldset{padding:20px;border:1px solid #ddd;background-color:#f9f9f9;}
+
+/* ______________________________________________________________ BACKGROUND */
+body{
+background: url(images/bg.jpg) #f2f2f2 center top repeat-x;
+}
+
+
+/* ______________________________________________________________ NAVBAR */
+#navbar{
+margin: 0px;
+height: 55px;
+width: 100%;
+background-image: url(images/navbg.png);
+background-repeat: repeat-x;
+}
+#menu{
+width: 1000px;
+margin: 0 auto;
+}
+#menu ul{
+list-style: none;
+margin: 0;
+}
+#menu li
+{
+float: right;
+position: relative;
+display: block;
+padding: 8px;
+}
+#menu li a{
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+color: #FFFFFF;
+}
+#menu li a:hover{
+border-bottom: 3px solid #CCCCCC;
+}
+.active a{
+border-bottom: 3px solid #ffffff;
+}
+
+/* ______________________________________________________________ WRAPPER */
+#wrapper{
+width: 1024px;
+margin: 0 auto;
+}
+
+/* ______________________________________________________________ CONTENT */
+#contentT{
+	width: 1024;
+	height: 20px;
+	margin: 0;
+	padding-top: 5px;
+	background-image: url(images/contentT.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#content{
+background: url(images/content.jpg) repeat-y;
+width: 1024;
+
+margin: 0;
+}
+#contentB{
+background: url(images/contentB.png) no-repeat;
+width: 1024;
+height: 20px;
+margin: 0;
+}
+
+/* ______________________________________________________________ SHOW */
+#showarea{
+background: #FFFFFF;
+border: 1px solid #333333;
+width: 980px;
+height: 440px;
+margin: 0 auto;
+}
+#show{
+width: 960px;
+height: 380px;
+margin: 0 auto;
+padding-top: 10px;
+}
+
+/* ______________________________________________________________ INFOAREA */
+#infoarea
+{
+width: 980px;
+margin: 0 auto;
+padding: 10px;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 14px;
+line-height: normal;
+text-align: justify;
+}
+#infoarea h1{
+font-weight:bold;
+margin: 20px;
+}
+#infoarea td{
+margin: 0 auot;
+border: 0px;
+padding: 0px;
+}
+/* ______________________________________________________________ FOOTER */
+#footer{
+height: 200px;
+margin: 0 auto;
+background: url(images/footer.png) repeat;
+margin-top: 20px;
+border-top: 5px solid #999;
+}
+#footarea{
+width: 1024px;
+padding: 10px;
+margin: 0 auto;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 14px;
+color: #FFF;
+text-align: justify;
+}
+#footarea td{
+background: none;
+border: 0px;
+}
