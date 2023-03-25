@@ -1,31 +1,19 @@
 papa-website-old
 ================
 
-This website is running on Heroku (free dyno).
+This website is running on Fly.io 
+(the website should be within free limits).
 
-Account - trustnit@gmail.com
+Account - Linked with Github Account with 2FA
 
-Heroku App Name - rakeshsinha
-
-The Nameservers of Godaddy (sinharakesh.com) are added in the DNS settings in order to use a domain to reach this site.
-
+App Name - sinharakesh
 
 The code in gallery(php) is very old and does not run on newer php 7.x onwards, 
-we are using "container" deployment in heroku as opposed to using standard Heroku buildbacks.
-
-Since this is now a container deployment, automatic deployment from GitHub branch is disabled.
-
+Since this migrated to "container" deployment for heroku, we continue to use the
+same for fly.io deployment. 
 
 ##### Steps to make changes
 
-```
-heroku auth:login
-
-heroku container:login
-
-heroku labs:enable --app=rakeshsinha runtime-new-layer-extract
-
-heroku container:push web -a rakeshsinha
-
-heroku container:release web -a rakeshsinha
-```
+1. make changes to the code and push to github
+2. login to fly.io and deploy the app again
+OR use `flyctl` utility to connect to fly.io and manage
