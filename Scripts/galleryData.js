@@ -1,23 +1,23 @@
 $(document).ready(function () {
-    
+
     var param = (window.location.search.split("?")[1]).split("=")[1];
 
     var paramLowerCase = param.toLowerCase()
     var paramUpperCase = param.charAt(0).toUpperCase() + param.slice(1);
 
     $('#gallery_title').text(paramUpperCase);
-    
-    if(param === "folk") {
+
+    if (param === "folk") {
         $('#gallery_title').text("Folk dances and Folk theatre");
     }
 
-    if(param === "dance") {
+    if (param === "dance") {
         $('#gallery_title').text("Different dances");
     }
 
-    // console.log(paramUpperCase, "paramUpperCase")
+    console.log(paramUpperCase, "paramUpperCase")
 
-    bindData(param);
+    bindData(paramUpperCase);
 
     $('.gallery_btns').append(`
         <a class="${param == "dance" ? "active" : ''}" href='gallery.html?cat=dance'>Dance</a>

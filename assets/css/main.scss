@@ -1826,10 +1826,11 @@ h6 {
 }
 
 .social_icons {
+    display: none;
+    // display: flex;
     position: fixed;
     top: 50%;
     right: 0%;
-    display: flex;
     flex-direction: column;
     z-index: 10000;
 
